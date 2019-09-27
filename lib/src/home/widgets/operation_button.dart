@@ -6,10 +6,11 @@ import 'package:nubank_interface/src/shared/util/size.dart';
 
 class OperationButton extends StatelessWidget {
 
-  OperationButton({this.icon, this.title});
+  OperationButton({this.icon, this.title, this.onTap});
 
   final IconData icon;
   final String title;
+  Function onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +23,7 @@ class OperationButton extends StatelessWidget {
       borderOnForeground: false,
       elevation: 0,
       child: InkWell(
+        onTap: onTap,
         child: Container(
           width: widthPercent('26.5%', context),
           height: heightPercent('16%', context),

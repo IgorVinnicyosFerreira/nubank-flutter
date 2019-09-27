@@ -87,7 +87,7 @@ class CardMoneyState extends State{
             _showMoney 
             ? Container(
               margin: EdgeInsets.only(top: heightPercent('1%', context)),
-              child: Text("R\$\ 309,27", style: TextStyle(color: ColorPallet.black, fontSize: heightPercent('5%', context))),
+              child: Text("R\$\ 2.600,27", style: TextStyle(color: ColorPallet.black, fontSize: heightPercent('5%', context))),
             )
             : Container(
               width: widthPercent('55%', context),
